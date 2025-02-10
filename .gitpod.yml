@@ -1,2 +1,6 @@
 image:
   file: .gitpod.Dockerfile
+
+tasks:
+  - name: Install Nextflow
+    init: curl -s https://get.nextflow.io | bash && mv nextflow /usr/local/bin/ && chmod +x /usr/local/bin/nextflow
